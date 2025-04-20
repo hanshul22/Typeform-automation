@@ -1,0 +1,7 @@
+services:
+  - type: cron
+    name: daily-zoho-form-submit
+    schedule: "0 9 * * *" # Every day at 09:00 AM UTC (adjust as needed)
+    runtime: python
+    buildCommand: ""
+    startCommand: "python submit.py"
